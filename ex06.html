@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+     // 연산자(단항, 이항, 삼항) 
+     // 단항 : ++, --
+     let i=1;
+     i=i+1;
+     i+=1;
+     i++; //1증가
+     ++i; //1증가
+     console.log(i++); //6
+     // 이항(산술, 관계, 논리)
+     let a=10;
+     let b=20;
+     console.log(a/2);// 5
+     console.log(a%2); // 0(나머지)
+     // 관계연산자 : 조건문(if)
+     console.log(a==b);
+     console.log(a>b);
+     console.log(a>=b);
+     console.log(a<=b);
+     console.log(a!=b);
+    // 논리연산자(&&, ||, !)
+    let op1=(3==3) && (4==4); // AND
+    console.log(op1);
+    let op2=true || false; // OR(||)
+    console.log(op2);
+    let op3=!true; // !(NOT)
+    console.log(op3);
+    
+    let str="aaaa"+"bbbb"; // +(결합)
+    console.log(str);
+
+    let x=parseInt('10')+parseInt('20'); // "1010"->20
+    console.log(x); //NaN
+
+    let c='A';
+    console.log(typeof c); // string
+
+    // 삼항 연산자 => (조건) ? 참  : 거짓
+
+    let age=20;
+    let isAdult=(age>=18) ? true : false;
+    console.log(isAdult); // true
+    
+
+
+
+
+  </script>
+</head>
+<body>
+ 
+<div class="container mt-3">
+  <h2>JavaScript</h2>
+  <div class="card">
+    <div class="card-header">ex02</div>
+    <div class="card-body">
+       <div class="row">
+         <div class="col-8"> </div>
+         <div class="col-4">결과화면</div>
+       </div>
+    </div> 
+    <div class="card-footer">사물지능기반 지능제어 서비스 개발자 과정</div>
+  </div>
+</div>
+
+</body>
+</html>
