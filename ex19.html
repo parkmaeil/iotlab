@@ -17,7 +17,20 @@
     <div class="card-header">ex02</div>
     <div class="card-body">
        <div class="row">
-         <div class="col-8"> </div>
+         <div class="col-8">
+           <table class="table table-bordered table-hover">
+             <thead>
+              <tr>
+               <th>제목</th>
+               <th>가격</th>
+               <th>저자</th>
+               <th>페이지</th>
+              </tr>
+             </thead>
+             <tbody id="bookList">              
+             </tbody>
+           </table>  
+         </div>
          <div class="col-4">결과화면</div>
        </div>
     </div> 
@@ -44,8 +57,21 @@
          console.log(books[i].title,books[i].price, books[i].author, books[i].page);
       }
       books.forEach((book)=>{
-          console.log(book.title, book.price, book.author, book.page);
+          //console.log(book.title, book.price, book.author, book.page);
+          console.log("Title:"+book.title);
+          console.log(`Title: ${book.title}`);
       });
+      // 책 리스트를 동적으로 만들기(<tr></tr>)
+      let trList="";
+      books.forEach((book)=>{
+          trList+="<tr>";
+          trList+=`<td>${book.title}</td>`;
+          trList+=`<td>${book.price}</td>`;
+          trList+=`<td>${book.author}</td>`;
+          trList+=`<td>${book.page}</td>`;
+          trList+="</tr>"; 
+       });
+      document.getElementById("bookList").innerHTML=trList;
 </script>
 </body>
 </html>
